@@ -13,6 +13,12 @@ You'll also need to know the channel ID that you'd like to back up messages from
 
 With these in hand, you can run `slackup --channel CHANNEL --token TOKEN`, substituting in the actual values that you obtained for the `CHANNEL` and `TOKEN`.
 
+# Working with the output
+
+Using a tool like `jq` (here, v1.6), one can quite easily manipulate this output into different forms.
+
+Given `jq`, the file `jq_stats.sh` can be provided the output from running `slackup` to get some messages, and prints various statistics about the messages.
+
 # Installation
 
 This program was build using `Rust 1.43.0`. You can install Rust from `https://rustup.rs/`.
